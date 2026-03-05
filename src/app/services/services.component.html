@@ -1,0 +1,25 @@
+<div  class="ff">
+    <div  class="first visible">
+        <p  class="hh">What we offer<span  style="color: #a587e3;">.</span></p>
+        <p  class="hh2">Elevate your online presence with exceptional web development, user-friendly interfaces, targeted digital strategies, and stunning website designs. We provide a comprehensive suite of services tailored to meet your unique needs, ensuring your business stands out in a competitive landscape. </p>
+    </div>
+    <div  class="second visible2" >
+        <div  class="hh3 "*ngFor="let s of services; let i = index" 
+        [ngStyle]="{'animation-delay': (i * 0.2) + 's'}"
+        (click)="shows(s.id)" 
+        >
+            <div  class="head">
+                <h3  style="width: 50%;display: flex;align-items: center;">{{s.title}}</h3>
+                <div  class="pphh">
+                    <h4  class="pp">{{s.tags[0]}} </h4>
+                    <h4  class="pp"> {{s.tags[1]}}</h4>
+                    <svg _ngcontent-ng-c2524161776="" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="38" width="38" xmlns="http://www.w3.org/2000/svg" class="arrow"><path _ngcontent-ng-c2524161776="" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144m124-144H100"></path></svg>                </div>
+            </div>
+            <div *ngIf="s.show">
+                <p>{{ s.description }}</p>
+              </div>
+                    </div>
+      
+     
+    </div>
+</div>

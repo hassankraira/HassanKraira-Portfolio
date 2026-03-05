@@ -1,0 +1,20 @@
+<h2>What I've done</h2>
+<div *ngFor="let work of work" class="work">
+<div class="work-img">
+<img src="{{work.img}}" alt="">
+</div>
+
+<div class="work-description">
+<div class="workname" style=" display: flex;font-size: 40px;font-weight: 1000;">
+    {{work.name}}
+</div>  
+  <br>
+{{work.description}}
+
+<div class="vist">
+    <br>
+
+  <a  target="_blank" href="{{work.vist}}"> Vist {{work.name}} <svg  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#a587e3" height="21" width="21" xmlns="http://www.w3.org/2000/svg" style="color: rgb(165, 135, 227);"><path  fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144m124-144H100"></path></svg></a>
+</div>
+</div>
+</div>
